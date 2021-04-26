@@ -1,0 +1,46 @@
+@mixin centering {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+nav{
+    @include centering;
+    
+    color: white;
+    background-color: $primary-black;
+    
+    // debug
+    height: 90px;
+}
+
+header{
+    @include centering;
+
+    background-color: bisque;
+
+    // debug
+    height: 300px;
+}
+
+main{
+    @include centering;
+
+    background-color: $main-color;
+
+    section{
+
+        // debug
+        margin: 10px;
+        background-color: bisque;
+
+    }
+}
+
+footer{
+    @include centering;
+
+    background-color: $footer-color;
+
+}

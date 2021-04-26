@@ -1,0 +1,29 @@
+@import 'partials/variables';
+@import 'partials/homepage';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    div.top-nav,
+    div.bottom-nav{
+        
+        height: 20px;
+        border: 1px solid white;
+    }
+
+    .row{
+
+        div{
+
+            // debug
+            height: 200px;
+            border: 1px solid black;
+        }
+    }
+}
