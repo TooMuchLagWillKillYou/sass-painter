@@ -1,27 +1,108 @@
 @mixin centering {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 nav{
-    @include centering;
-    
+
+    @include centering;  
     color: white;
     background-color: $primary-black;
+    font-size: 0.9em;
+
+    .top-nav{
+
+        padding: 1% 0;
+
+        .contained{
+            justify-content: flex-end;
+            align-items: center;
+            color: $text-secondary;
+
+            li{
+                margin-left: 20px;
+                
+                i{
+                    color: $icon-primary;
+                    margin-right: 0.6em;
+                }
+            }
+        }
+
+    }
+
+    .bottom-nav{
+
+        .contained{
+
+            align-items: center;
+            padding: 1% 0;
     
-    // debug
-    height: 90px;
+            img{
+    
+                max-width: 100px;
+            }
+    
+            li{
+                margin-left: 30px;
+    
+                i{
+                    color: $text-secondary;
+                    font-size: 0.7em;
+                }
+            }
+        }
+
+    }
+
 }
 
 header{
     @include centering;
 
-    background-color: bisque;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-image: url('img/bg-painter-home.jpg');
+    background-size: cover;
+    background-position-y: center;
 
-    // debug
-    height: 300px;
+    .contained{
+
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        img{
+            max-width: 250px;
+            margin-bottom: 5%;
+        }
+        
+        h3{
+            font-weight: 400;
+        }
+
+        .offer{
+
+            margin: 5% 0;
+            color: $link-secondary;
+            
+            p{
+
+                &:first-child{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        button{
+
+            &:first-child{
+                background-color: black;
+                color: white;
+                margin-right: 15px;
+            }
+        }
+    }
+
 }
 
 main{
@@ -31,9 +112,25 @@ main{
 
     section{
 
-        // debug
-        margin: 10px;
-        background-color: bisque;
+        .contained{
+
+            flex-direction: column;
+            height: 350px;
+            background-color: white;
+
+            img{
+                max-width: 100%;
+                height: fit-content
+            }
+
+            div{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 4% 7%;
+            }
+        }
 
     }
 }
